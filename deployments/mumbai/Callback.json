@@ -1,0 +1,150 @@
+{
+  "address": "0x5cDe11Db288B15fd8db9A9051e2c5B2078f4dEc3",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "count",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "increaseCount",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_interval",
+          "type": "uint256"
+        }
+      ],
+      "name": "increaseCountStrict",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "lastExecuted",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xcf08e08dbdfdaedb41a5da86f86d2de7eacc970e62ae4d50de3bc7fbd31453e5",
+  "receipt": {
+    "to": null,
+    "from": "0x5ce6047a715B1919A58C549E6FBc1921B4d9287D",
+    "contractAddress": "0x5cDe11Db288B15fd8db9A9051e2c5B2078f4dEc3",
+    "transactionIndex": 1,
+    "gasUsed": "178913",
+    "logsBloom": "0x00000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000800000000000000000000100000000004000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000010000000000000080000000000000000000200000000000000000000000000000000000000000000000000000000000004000000000000000000001000000000000000000000200000000100040000000000000000000000000000000000000000000000000000000000000000000100000",
+    "blockHash": "0xd951b8b30df6e453937631458bb7e341bd7c9f1ee7496b9a665e1c866154b43b",
+    "transactionHash": "0xcf08e08dbdfdaedb41a5da86f86d2de7eacc970e62ae4d50de3bc7fbd31453e5",
+    "logs": [
+      {
+        "transactionIndex": 1,
+        "blockNumber": 42928327,
+        "transactionHash": "0xcf08e08dbdfdaedb41a5da86f86d2de7eacc970e62ae4d50de3bc7fbd31453e5",
+        "address": "0x0000000000000000000000000000000000001010",
+        "topics": [
+          "0x4dfe1bbbcf077ddc3e01291eea2d5c70c2b422b415d95645b9adcfd678cb1d63",
+          "0x0000000000000000000000000000000000000000000000000000000000001010",
+          "0x0000000000000000000000005ce6047a715b1919a58c549e6fbc1921b4d9287d",
+          "0x000000000000000000000000be188d6641e8b680743a4815dfa0f6208038960f"
+        ],
+        "data": "0x0000000000000000000000000000000000000000000000000001e630873f87020000000000000000000000000000000000000000000000000b1e1579e6887b2300000000000000000000000000000000000000000000355325d55f56745921480000000000000000000000000000000000000000000000000b1c2f495f48f42100000000000000000000000000000000000000000000355325d74586fb98a84a",
+        "logIndex": 2,
+        "blockHash": "0xd951b8b30df6e453937631458bb7e341bd7c9f1ee7496b9a665e1c866154b43b"
+      }
+    ],
+    "blockNumber": 42928327,
+    "cumulativeGasUsed": "199913",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "442e4670bcaa5098bd71cd41fd7600e4",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.18+commit.87f61d96\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"count\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"increaseCount\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_interval\",\"type\":\"uint256\"}],\"name\":\"increaseCountStrict\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"lastExecuted\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/callbacks/Callback.sol\":\"Callback\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/callbacks/Callback.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.18;\\n\\ncontract Callback {\\n    mapping(address => uint256) public count;\\n    mapping(address => uint256) public lastExecuted;\\n\\n    function increaseCount() external {\\n        count[msg.sender] += 1;\\n        lastExecuted[msg.sender] = block.timestamp;\\n    }\\n\\n    function increaseCountStrict(uint256 _interval) external {\\n        uint256 _lastExecuted = lastExecuted[msg.sender];\\n\\n        require(\\n            block.timestamp > _lastExecuted + _interval,\\n            \\\"Callback: interval not elapsed\\\"\\n        );\\n\\n        count[msg.sender] += 1;\\n        lastExecuted[msg.sender] = block.timestamp;\\n    }\\n}\\n\",\"keccak256\":\"0x3d6e9b77f9afd098be7fa0e7d4e8da1072b29d50451b4fdd17f0324cbef796fe\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610246806100206000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c806305d85eda1461005157806348b1e66514610083578063abd1b73d14610098578063de11524c146100a0575b600080fd5b61007161005f3660046101a0565b60006020819052908152604090205481565b60405190815260200160405180910390f35b6100966100913660046101d0565b6100c0565b005b610096610167565b6100716100ae3660046101a0565b60016020526000908152604090205481565b336000908152600160205260409020546100da82826101e9565b421161012c5760405162461bcd60e51b815260206004820152601e60248201527f43616c6c6261636b3a20696e74657276616c206e6f7420656c61707365640000604482015260640160405180910390fd5b33600090815260208190526040812080546001929061014c9084906101e9565b90915550503360009081526001602052604090204290555050565b3360009081526020819052604081208054600192906101879084906101e9565b9091555050336000908152600160205260409020429055565b6000602082840312156101b257600080fd5b81356001600160a01b03811681146101c957600080fd5b9392505050565b6000602082840312156101e257600080fd5b5035919050565b8082018082111561020a57634e487b7160e01b600052601160045260246000fd5b9291505056fea264697066735822122046309a7faeaa0a6a299ff5c9fb1d028a918200635e48545a448c65caa41815f364736f6c63430008120033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c806305d85eda1461005157806348b1e66514610083578063abd1b73d14610098578063de11524c146100a0575b600080fd5b61007161005f3660046101a0565b60006020819052908152604090205481565b60405190815260200160405180910390f35b6100966100913660046101d0565b6100c0565b005b610096610167565b6100716100ae3660046101a0565b60016020526000908152604090205481565b336000908152600160205260409020546100da82826101e9565b421161012c5760405162461bcd60e51b815260206004820152601e60248201527f43616c6c6261636b3a20696e74657276616c206e6f7420656c61707365640000604482015260640160405180910390fd5b33600090815260208190526040812080546001929061014c9084906101e9565b90915550503360009081526001602052604090204290555050565b3360009081526020819052604081208054600192906101879084906101e9565b9091555050336000908152600160205260409020429055565b6000602082840312156101b257600080fd5b81356001600160a01b03811681146101c957600080fd5b9392505050565b6000602082840312156101e257600080fd5b5035919050565b8082018082111561020a57634e487b7160e01b600052601160045260246000fd5b9291505056fea264697066735822122046309a7faeaa0a6a299ff5c9fb1d028a918200635e48545a448c65caa41815f364736f6c63430008120033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 5,
+        "contract": "contracts/callbacks/Callback.sol:Callback",
+        "label": "count",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_mapping(t_address,t_uint256)"
+      },
+      {
+        "astId": 9,
+        "contract": "contracts/callbacks/Callback.sol:Callback",
+        "label": "lastExecuted",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_address,t_uint256)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_address,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

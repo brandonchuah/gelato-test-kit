@@ -8,9 +8,12 @@ const main = async () => {
   console.log("Deployer: ", await deployer.getAddress());
   const chainId = (await ethers.provider.getNetwork()).chainId;
 
-  const automate = new AutomateSDK(chainId, deployer);
+  const automate = new AutomateSDK(chainId, deployer, undefined, {
+    isDevelopment: true,
+  });
 
-  const taskId = "";
+  const taskId =
+    "0x59bf40c6ae92f683b107f136bbac4fc7c4c7daadad0428422dc8bfee4f513534";
 
   if (taskId) {
     console.log("Cancelling task: ", taskId);
