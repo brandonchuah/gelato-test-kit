@@ -1,13 +1,12 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { Contract } from "@ethersproject/contracts";
 import {
   Web3Function,
   Web3FunctionContext,
 } from "@gelatonetwork/web3-functions-sdk";
-import { gql, request } from "graphql-request";
+import { Contract } from "ethers";
+import request, { gql } from "graphql-request";
 
 Web3Function.onRun(async (context: Web3FunctionContext) => {
-  //onRun.js
   const { gelatoArgs, multiChainProvider } = context;
 
   const CHAIN_CONFIGS: {
@@ -149,8 +148,8 @@ Web3Function.onRun(async (context: Web3FunctionContext) => {
     }
   `;
 
-  const data = await request(subgraphUrl, query);
-  const lastExecutionTimeInSec = data.taskExecutions[0].executedAt;
+  const data = (await request(subgraphUrl, query)) as any;
+  const lastExecutionTimeInSec = Number(data.taskExecutions[0].executedAt);
   const lastExecutionTimeHumanReadable = new Date(
     lastExecutionTimeInSec * 1000
   ).toLocaleString();
