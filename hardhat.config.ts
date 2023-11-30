@@ -122,6 +122,11 @@ const config: HardhatUserConfig = {
       url: `https://arb-goerli.g.alchemy.com/v2/${ALCHEMY_ID}`,
       accounts: PRIVATE_KEY ? [PRIVATE_KEY] : [],
     },
+    arbsepolia: {
+      chainId: 421614,
+      url: `https://sepolia-rollup.arbitrum.io/rpc`,
+      accounts: PRIVATE_KEY ? [PRIVATE_KEY] : [],
+    },
     baseGoerli: {
       chainId: 84531,
       url: "https://goerli.base.org",
@@ -145,6 +150,11 @@ const config: HardhatUserConfig = {
     sepolia: {
       chainId: 11155111,
       url: `https://eth-sepolia.g.alchemy.com/v2/${ALCHEMY_ID}`,
+      accounts: PRIVATE_KEY ? [PRIVATE_KEY] : [],
+    },
+    osepolia: {
+      chainId: 11155420,
+      url: `https://sepolia.optimism.io`,
       accounts: PRIVATE_KEY ? [PRIVATE_KEY] : [],
     },
     unreal: {

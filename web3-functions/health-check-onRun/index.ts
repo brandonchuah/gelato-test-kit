@@ -102,6 +102,11 @@ Web3Function.onRun(async (context: Web3FunctionContext) => {
         "https://api.thegraph.com/subgraphs/name/brandonchuah/poke-me-arbitrum-goerli-test",
       interval: 28800, // 8 hours
     },
+    421614: {
+      subgraphUrl:
+        "https://api.thegraph.com/subgraphs/name/brandonchuah/poke-me-arbsepolia-test",
+      interval: 86400, // 24 hours
+    },
     84531: {
       subgraphUrl:
         "https://api.goldsky.com/api/public/project_cliocs4xa038s4aumegvqdn8d/subgraphs/w3f-basegoerli/latest/gn",
@@ -116,6 +121,11 @@ Web3Function.onRun(async (context: Web3FunctionContext) => {
       subgraphUrl:
         "https://api.studio.thegraph.com/query/44924/poke-me-sepolia-test/version/latest",
       interval: 86400, // 12 hours
+    },
+    11155420: {
+      subgraphUrl:
+        "https://api.goldsky.com/api/public/project_cliocs4xa038s4aumegvqdn8d/subgraphs/w3f-osepolia/latest/gn",
+      interval: 86400, // 24 hours
     },
   };
 
