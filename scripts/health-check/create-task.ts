@@ -59,6 +59,7 @@ main()
     process.exit();
   })
   .catch((err) => {
+    console.error(err);
     console.error("Error:", err.message);
     process.exit(1);
   });
